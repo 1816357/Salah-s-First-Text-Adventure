@@ -43,7 +43,7 @@ while gameState == 1:
 
 while gameState == 2:
     print(stats["EXP"])
-    user_input = input("You have escaped the prison cell and have entered the corridor, there are two doors. Which door do you enter \n1. Door 1\n2. Door 2\n")
+    user_input = input("You have escaped the prison cell and have entered the corridor, there are two doors. Which door do you enter \n1. Door 1\n2. Door 2\n3. Door 3\n")
 
     if user_input.lower() == "door 1":
         print("you've found another inmate")
@@ -51,6 +51,9 @@ while gameState == 2:
     elif user_input.lower() == "door 2":
         print("you've found the ladder to the guard tower")
         gameState = 3.2
+    elif user_input.lower() == "door 3":
+        print("There is an evil monster behind this door")
+        gameState = -1
     else:
         print("sorry you can't do this")
 
