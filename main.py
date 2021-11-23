@@ -13,8 +13,6 @@ def CheckInput(optionList):
 inventory = []
 stats = {"Name": "John", "MaxHealth": 100, "Level": 1, "EXP": 0}
 
-
-
 gameState = 1
 while gameState == 1:
     user_input = input("What are you going to do?\n1. Look Around\n2. Yell\n3. Shake Bars\n4. Open Door\n")
@@ -64,3 +62,7 @@ while gameState == 3.1:
         gameState = 4.2
     else:
         print("sorry you can't do this")
+
+while gameState == -1:
+    print("You have died. How sad.")
+    break
